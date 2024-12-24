@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+tools:context=".MainActivity">
+
+
+<!-- TextView (Hello message) -->
+<!-- Constraint to top of parent -->
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent" />
+
+<!-- EditText (Input field for name) -->
+<!-- Constrained to the bottom of TextView -->
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent" />
+
+<!-- Button (Click me button) -->
+
+<TextView
+    android:id="@+id/hello"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="50dp"
+    android:layout_marginTop="152dp"
+    android:background="@android:color/black"
+    android:gravity="center"
+    android:padding="20dp"
+    android:text="Hello !! This is Rashi"
+    android:textAllCaps="true"
+    android:textColor="#5F51B4"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:typeface="sans"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="49dp" />
+
+<EditText
+    android:id="@+id/entername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="132dp"
+    android:hint="Enter Your Name..."
+    android:textAlignment="center"
+    android:textColor="#BFBABA"
+    android:textSize="32sp"
+    app:layout_constraintTop_toBottomOf="@id/hello"
+    tools:layout_editor_absoluteX="0dp" />
+
+<!-- Constrained to the bottom of EditText --><![CDATA[
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+
+    ]]>
+
+<Button
+    android:id="@+id/myButton"
+    android:layout_width="152dp"
+    android:layout_height="63dp"
+    android:layout_marginTop="44dp"
+    android:enabled="true"
+    android:text="CLICK ME"
+    android:textAllCaps="true"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/entername"
+    tools:layout_editor_absoluteX="129dp" />
+
+<ImageView
+    android:id="@+id/myImage"
+    android:layout_width="176dp"
+    android:layout_height="166dp"
+    android:src="@drawable/pic"
+    tools:layout_editor_absoluteX="117dp"
+    tools:layout_editor_absoluteY="515dp"
+    android:contentDescription="My profile picture"
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
