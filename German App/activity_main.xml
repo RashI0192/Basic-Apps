@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/german"
+    tools:context=".MainActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:layout_marginBottom="252dp"
+        android:width="200dp"
+        android:gravity="center"
+        android:text="German Teacher App"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="137dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="57dp"
+        android:backgroundTint="@color/material_dynamic_neutral_variant70"
+        android:text="BLUE"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/black"
+        android:layout_width="137dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/material_dynamic_neutral_variant70"
+
+        android:text="BLACK"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/blue"
+        app:layout_constraintTop_toBottomOf="@+id/blue" />
+
+
+    <Button
+        android:id="@+id/white"
+
+        android:layout_width="137dp"
+        android:layout_height="75dp"
+
+
+        android:backgroundTint="@color/material_dynamic_neutral_variant70"
+        android:text="WHITE"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <Button
+        android:id="@+id/redB"
+
+        android:layout_width="137dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/material_dynamic_neutral_variant70"
+
+        android:text="RED"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/black"
+        app:layout_constraintTop_toBottomOf="@+id/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
